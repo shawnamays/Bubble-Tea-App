@@ -3,7 +3,9 @@ body{
   word-wrap:break-word;
   background-image: url(https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
   color: white;
-  display: flex;
+  background-repeat: no-repeat;
+  background-size: 100%;
+ 
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -11,7 +13,7 @@ body{
 /* .col-sm-6{
 
   gap: 10%;
-} */ */
+} */
 
 /* https://i.ibb.co/NVFmnf7/bobabg.png */
 
@@ -20,10 +22,15 @@ background-image: url(https://i.ibb.co/NVFmnf7/bobabg.png);
 background-repeat: no-repeat;
 height: 600px;
 width: 600px; 
+float: left;
+margin-left: 15%;
 
 
+}
 
-
+.notes {
+  background-color: black;
+  margin-top: 5%;
 }
 
 .rightSide {
@@ -31,8 +38,13 @@ width: 600px;
   background-repeat: no-repeat;
   height: 600px;
   width: 600px; 
-
-
+  float: right;
+  margin-right: 15%;
+  padding-left:5%;
+  padding-right: 15%;
+  font-size: 8px;
+  
+ 
 }
 img{
   height: 200px;
@@ -43,22 +55,35 @@ img{
 }
 
 .radioButtons {
+margin-top: 15%;
 
-  display: flex;
+ width: 800px;
+
+
+  
+}
+
+.theSelection {
+ 
+ 
 }
 
 .mixins {
 
-  display: flex;
+width: 800px;
+margin-top: 8%;
+
 }
 
 .displayOrders {
   color: rgb(164, 87, 164);
+  font-size: 10px;
 }
 
 .completedOrders {
   color: red;
   text-decoration: line-through black;
+  font-size: 10px;
   
 }
 

@@ -2,9 +2,12 @@
 <html>
 
 <head>
-  <title>21 Savage Fan Site</title>
+  <title>Latte Milk Boba Bar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Montserrat+Alternates&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
@@ -12,7 +15,7 @@
 </head>
 
 <body>
-  <div class="container">
+ 
 
     <div class="page-header text-center">
       <h1>The Latte Milk Boba Bar</h1>
@@ -21,11 +24,11 @@
 
 
 
-    <div class="row">
+    <div class="leftSide">
 
       <!-- LOCAL INFORMATION -->
       <div class="col-sm-6">
-        <div class="rightSide">
+        <div class="dummySide">
 
 
         <h3>Orders</h3>
@@ -50,11 +53,10 @@
               <!-- //on click we are going to run the function of completeMyOrder -->
               <button class="gotOrder" onclick="completeMyOrder('<%= orders[i]._id %>')">I Received My Order!</button>
 
-              <span><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+          
             </li>
             <% } %>
         </ul>
-
 
         <h3>Completed Orders</h3>
         <ul class="completedOrders">
@@ -84,22 +86,26 @@
       </div>
       </div>
 
+    </div>
+
+
+
+
+
 
 
       <div class="col-sm-6">
-<div class="rightSide">
-
-
-        <h2>place an order</h2>
+  <div class="rightSide">
 
 
 
 
         <!--this is the additional notes section of the order-->
-        <form action="/customerOrders" method="POST">
+        <form action="/customerOrders" method="POST" class="theSelection">
 
-          <h2>pick a flavor:</h2>
+         
           <div class="radioButtons">
+            <h2>pick a flavor:</h2>
             <input type="radio" name="flavor" value="taro">
             <label for="someflavor">taro</label><br>
 
@@ -121,8 +127,10 @@
 
 
 
-          <h2>choose some mix-ins:</h2>
+        
           <div class="mixins">
+
+              <h2>pick a mix-in:</h2>
             <input type="radio" name="mixins" value="tapioca pearls">
             <label for="somemixins">tapioca pearls</label><br>
 
@@ -138,20 +146,17 @@
             <input type="radio" name="mixins" value="chocolate chips">
             <label for="somemixins">chocolate chips</label>
 
-            <input type="radio" name="mixins" value="bingsu">
+            <input type="radio" name="mixins" value="팥앙금">
             <label for="somemixins">팥앙금</label>
           </div>
 
           <!-- <input type="text" value="<%= user.local.email %>" name="name"> -->
-          <input type="text" placeholder="any notes?" name="msg">
+          <input type="text" class="notes" placeholder="any notes?" name="msg">
           <button type="submit" class="orderBtn">Order Now</button>
         </form>
       </div>
-
-
-
     </div>
-    </div>
+    
 
     <script src="main.js"></script>
 
