@@ -23,7 +23,7 @@ background-repeat: no-repeat;
 height: 600px;
 width: 600px; 
 float: left;
-margin-left: 15%;
+margin-left: 3%;
 
 
 }
@@ -44,7 +44,6 @@ font-family: 'Montserrat Alternates', sans-serif;
   height: 600px;
   width: 600px; 
   float: right;
-  margin-right: 15%;
   padding-left:5%;
   padding-right: 15%;
   font-size: 8px;
