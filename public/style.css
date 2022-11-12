@@ -28,6 +28,11 @@ margin-left: 15%;
 
 }
 
+.latteBar {
+  font-family: 'Lexend Tera', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+}
+
 .notes {
   background-color: black;
   margin-top: 5%;
